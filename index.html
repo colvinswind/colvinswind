@@ -28,13 +28,13 @@
   <body>
 
     <header id="header">
-      <img src="logo.jpg">
+      <img src="logo.jpg" style="width:472px;height:200px;">
       <h1>Colvins Wind</h1>
       
       <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
       <ul class="main-menu">
         <li><a href="#colvins1">Colvins 1</a></li>
-        <li><a href="#about">about</a></li>
+        <li><a href="#colvins2">Colvins 2</a></li>
         <li><a href="#contact">contact</a></li>
       </ul>                 
     </header>
@@ -44,24 +44,29 @@
         <div id="content"> 
           
           <div id="colvins1" class="content-region hide">
-            <h2>Colvins 1</h2>
+            <h2>Latest 12 hours of data</h2>
             <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/cpl-makerlab/simple-website-template">Fork this repository</a> to create your own site!
               <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2005481/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=100&title=Average+Wind+Speed&type=line&xaxis=Time&yaxis=Windspeed+%28knots%29"></iframe>
+              <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2005481/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=100&title=Wind+Gust&type=line&xaxis=Time&yaxis=Windspeed+%28knots%29"></iframe>
+              <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2005481/status/recent"></iframe>
+              <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2005481/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=100&timescale=60&title=Temperature&type=line&xaxis=Time&yaxis=Temperature+%28degrees+Celsius%29"></iframe>
             </p>
           </div>
           
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
+          <div id="colvins2" class="content-region hide">
+            <h2>Latest 12 hours of data</h2>
             <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
+              <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2008934/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=100&title=Average+Wind+Speed&type=line&xaxis=Time&yaxis=Windspeed+%28knots%29"></iframe>
+              <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2008934/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=100&title=Wind+Gust&type=line&xaxis=Time&yaxis=Windspeed+%28knots%29"></iframe>
+              <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2008934/status/recent"></iframe>
+              <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2008934/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=100&timescale=30&title=Temperature&type=line&xaxis=Time&yaxis=Temperature+%28degrees+Celsius%29"></iframe>
             </p>
           </div>
           
           <div id="contact" class="content-region hide">
             <h2>Contact</h2>
             <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
+              https://www.colvins.nz/ 
             </p>
           </div>
           
@@ -70,7 +75,8 @@
     </div>
 
     <footer>  
-      Footer region
+      https://thingspeak.com/channels/2005481
+      https://thingspeak.com/channels/2008934
     </footer>
     
     <!-- Load additional JS scripts here -->
