@@ -27,7 +27,7 @@
   
   <body>
 
-    <header id="header" style="position:relative; width:910px;padding:10px;">
+    <header id="header" style="position:relative; width:910px;padding:10px;background-color: white;color:black;background: rgba(255,255,255,0.5);">
       <img src="logo.jpg" style="width:236px;height:100px;position:relative;">
       <h1>Wind Monitoring Service</h1>
       <style>
@@ -38,17 +38,17 @@
       
       <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
       <ul class="main-menu" style="text-align:center;">
-        <li><a href="#colvins1">Colvins 1</a></li>
-        <li><a href="#colvins2">Colvins 2</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#colvins1" style="color: black;">Colvins 1</a></li>
+        <li><a href="#colvins2" style="color: black;">Colvins 2</a></li>
+        <li><a href="#contact" style="color: black;">Contact</a></li>
       </ul>                 
     </header>
    
-    <div id="container" style="position:relative; width:930px;">
-      <div class="inner" style="width:930px;">
-        <div id="content" style="padding:10px;"> 
+    <div id="container" style="position:relative; width:930px;background: rgba(255,255,255,0);">
+      <div class="inner" style="width:930px;background: rgba(255,255,255,0);">
+        <div id="content" style="padding:10px;background: rgba(255,255,255,0.3);"> 
           
-          <div id="colvins1" class="content-region hide">
+          <div id="colvins1" class="content-region hide" style="color: black;">
             <h2>Latest 12 hours of data</h2>
             <p>
               <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2005481/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=100&title=Average+Wind+Speed&type=line&xaxis=Time&yaxis=Windspeed+%28knots%29"></iframe>
@@ -58,7 +58,7 @@
             </p>
           </div>
           
-          <div id="colvins2" class="content-region hide">
+          <div id="colvins2" class="content-region hide" style="color: black;">
             <h2>Latest 12 hours of data</h2>
             <p>
               <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2008934/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=100&title=Average+Wind+Speed&type=line&xaxis=Time&yaxis=Windspeed+%28knots%29"></iframe>
@@ -68,7 +68,7 @@
             </p>
           </div>
           
-          <div id="contact" class="content-region hide">
+          <div id="contact" class="content-region hide" style="color: black;">
             <h2>Contact</h2>
             <p>
               <a href="https://www.colvins.nz/">https://www.colvins.nz/<a/> 
@@ -84,6 +84,7 @@
         footer {
           width: 910px;
           padding: 10px;
+          color: black;
         }
       </style>
     </footer>
